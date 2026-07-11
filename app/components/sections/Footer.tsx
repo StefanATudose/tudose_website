@@ -30,7 +30,7 @@ export function Footer() {
 
             {/* Tagline */}
             <p className="text-white/50 max-w-md mx-auto text-sm font-light">
-              Helping businesses build reliable software and make sense of technology. Let&apos;s start a conversation.
+              Helping businesses build reliable software and make sense of technology. Let&apos;s chat.
             </p>
           </div>
 
@@ -41,11 +41,11 @@ export function Footer() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               {/* Email */}
               <a
-                href="mailto:contact@tudose.dev"
+                href="mailto:contact@stefantudose.com"
                 className="flex items-center gap-3 px-6 py-3 bg-white/10 rounded-full text-white hover:bg-white/20 transition-colors"
               >
                 <i className="fas fa-envelope text-purple-400"></i>
-                <span>contact@tudose.dev</span>
+                <span>contact@stefantudose.com</span>
               </a>
 
               {/* Social links */}
@@ -59,26 +59,14 @@ export function Footer() {
                 >
                   <i className="fab fa-linkedin-in text-lg"></i>
                 </a>
-                <a
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[#333] transition-colors"
-                  title="GitHub"
-                >
-                  <i className="fab fa-github text-lg"></i>
-                </a>
               </div>
             </div>
           </div>
 
           {/* Bottom bar */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-white/10">
-            <p className="text-white/40 text-sm">
+          <div className="flex justify-center pt-8 border-t border-white/10">
+            <p className="text-white/40 text-sm text-center">
               © {new Date().getFullYear()} Tudose. All rights reserved.
-            </p>
-            <p className="text-white/30 text-sm">
-              Built with <i className="fas fa-heart text-purple-400"></i> and AI
             </p>
           </div>
         </div>
