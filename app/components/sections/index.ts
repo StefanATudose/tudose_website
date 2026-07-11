@@ -1,6 +1,6 @@
 export { HeroSection } from "./HeroSection";
-export { ProjectsSection } from "./ProjectsSection";
-export { ProjectCard } from "./ProjectCard";
-export { StartupSection } from "./StartupSection";
+export { TechVectorSection } from "./TechVectorSection";
+export { GymSection } from "./GymSection";
+export { KaizenSection } from "./KaizenSection";
 export { PhoneMockup } from "./PhoneMockup";
 export { Footer } from "./Footer";

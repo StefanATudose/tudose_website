@@ -22,14 +22,14 @@ This document defines the scope, objectives, core features, and current status o
     *   *Process Automation*: Connecting APIs, databases, and AI models to reduce operational overhead.
     *   *Startup Advisory*: Providing scoping and viability advisory based on founder experiences.
 
-### 2. Featured Case Studies Grid
-*   **Objective**: Present three core projects focused on benefits and business value:
-    1.  *TechVector*: AI RAG news assistant, showing what custom AI can do for the client's information operations.
-    2.  *Florin Gold Gym*: Next.js dashboard + Flutter app suite, managing operations for a high-traffic gym of 500+ members.
-    3.  *Kaizen*: Minimalist Android distraction-blocker built at the system level.
+### 2. Dedicated Case Study Narrative Sections
+*   **Objective**: Present three sequential, storytelling-focused sections structured around client value:
+    1.  *TechVector (What I Can Build)*: Custom AI & RAG system demonstrating how unstructured data can automate research and operations.
+    2.  *Florin Gold Gym (Experience in Delivery)*: High-stakes software managing a gym of 500+ members, demonstrating 24/7 reliability where downtime is not an option.
+    3.  *Kaizen (Business Background)*: Distraction blocker highlighting founder lessons, speaking in client/business terms rather than confusing technical jargon.
 *   **Behavior**:
-    *   External projects (TechVector, Kaizen) link out directly in a new tab.
-    *   Internal case studies (Florin Gold Gym) route to a dedicated page via Next.js `Link`.
+    *   External projects (TechVector, Kaizen) link out directly in new tabs.
+    *   Internal case study (Florin Gold Gym) features a clean teaser block with a direct call-to-action routing to the dedicated page via Next.js `Link`.
 
 ### 3. Dedicated Case Study Path (`/florin-gold-gym`)
 *   **Objective**: Show high-stakes engineering details.
