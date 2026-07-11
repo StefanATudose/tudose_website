@@ -23,35 +23,37 @@ graph TD
 * **Framework**: [Vitest](https://vitest.dev/)
 * **Environment**: `happy-dom` (fast, lightweight browser/DOM emulator)
 * **Helper**: `@testing-library/react` (React Testing Library)
-* **Scope**: Custom React hooks (like `useChat.ts`), utility helper functions, and individual React components (like `ChatWidget.tsx` and `TypingIndicator.tsx`).
-* **Test Location**: Placed alongside the implementation files (e.g. `app/hooks/useChat.test.ts` or `app/components/chat/ChatWidget.test.tsx`).
+* **Scope**: Individual utilities and custom React state-management hooks or helper functions.
+* **Exclusion**: Vitest is explicitly configured to ignore files under the `tests/` directory (where E2E specs live) to avoid runner runtime clashes.
+* **Test Location**: Placed alongside the implementation files (e.g., `app/**/*.test.ts`).
 
 ### 2. End-to-End (E2E) Browser Integration Testing
 * **Framework**: [Playwright](https://playwright.dev/)
 * **Environment**: Real browser environments (defaults to Chromium)
-* **Scope**: Full multi-component flows, page rendering, focus management, network interactions, and real browser scrolling/animations.
-* **Test Location**: Placed in the dedicated `tests/` directory at the project root (e.g. `tests/chat-integration.spec.ts`).
+* **Scope**: Core user navigation flows, verifying that elements load correctly, testing Next.js router transitions (between the homepage `/` and the case study page `/florin-gold-gym`), and checking external links.
+* **Test Location**: Placed in the dedicated `tests/` directory at the project root (e.g., `tests/navigation.spec.ts`).
 
 ---
 
 ## Configuration Files
 
-* **`vitest.config.mts`**: Registers the React plugin and `tsconfigPaths` plugin (enabling path resolution like `@/*`), sets the environment to `happy-dom`, and references the setup file.
-* **`vitest.setup.ts`**: Configures global mocks required for jsdom/happy-dom testing, such as:
-  * Mocking `window.scrollTo` (since layout scroll methods are not natively supported in virtual DOMs).
+* **`vitest.config.mts`**: Registers the React and `tsconfigPaths` plugins, sets the environment to `happy-dom`, and excludes `tests/**` (Playwright tests) from the Vitest runtime:
+  ```typescript
+  exclude: [...configDefaults.exclude, "tests/**"]
+  ```
+* **`vitest.setup.ts`**: Configures global mocks required for Virtual DOM tests:
+  * Mocking `window.scrollTo` (not supported natively in happy-dom).
   * Mocking `next/image` to render as a plain HTML `<img>` tag for ease of attribute assertions.
-* **`playwright.config.ts`**: Configures Playwright's target folder (`tests/`), local webServer details (`npm run dev` with reuse of existing server if running), and target browser profiles.
+* **`playwright.config.ts`**: Configures Playwright's test directory (`tests/`), local webServer details (`npm run dev` with reuse of existing server if active), and target browser profiles.
 
 ---
 
 ## Running Tests
 
-Verify your implementation by running the respective npm scripts:
-
 ### Unit & Component Tests
 
 ```bash
-# Run all Vitest tests once
+# Run Vitest tests once
 npm run test
 
 # Run Vitest in watch mode (ideal during development)
@@ -60,65 +62,60 @@ npm run test:watch
 
 ### E2E Integration Tests
 
-Make sure the dev server is running or let Playwright start it automatically:
+Make sure the dev server is running, or let Playwright start it automatically:
 
 ```bash
 # Run E2E tests against Chromium (headless by default)
 npm run test:e2e
 
-# Run Playwright tests with the interactive UI runner (highly recommended for debugging)
+# Run Playwright tests with the interactive UI runner
 npx playwright test --ui
 ```
 
 ---
 
-## Writing New Tests
+## E2E Test Example: Navigation & Static Makeover
 
-### 1. Writing a Unit Test (Vitest)
-Create a `.test.ts` or `.test.tsx` file next to your target module. Use standard `describe`, `it`, and `expect` syntax.
+Our primary E2E test file (`tests/navigation.spec.ts`) verifies the structure of the personal portfolio website and links:
 
-Example (testing a utility):
-```typescript
-import { describe, it, expect } from "vitest";
-import { formatTime } from "./utils";
-
-describe("formatTime", () => {
-  it("formats date to YYYY-MM-DD", () => {
-    const date = new Date("2026-07-11T12:00:00Z");
-    expect(formatTime(date)).toBe("2026-07-11");
-  });
-});
-```
-
-### 2. Writing a Component Test (React Testing Library)
-Use React Testing Library's `render` and `screen` utilities to verify interactive behaviors.
-
-Example:
-```typescript
-import { render, screen, fireEvent } from "@testing-library/react";
-import { Button } from "./Button";
-import { vi, describe, it, expect } from "vitest";
-
-describe("Button", () => {
-  it("triggers click handler", () => {
-    const handleClick = vi.fn();
-    render(<Button onClick={handleClick}>Click Me</Button>);
-    
-    fireEvent.click(screen.getByText("Click Me"));
-    expect(handleClick).toHaveBeenCalledOnce();
-  });
-});
-```
-
-### 3. Writing an Integration Test (Playwright)
-Create a `.spec.ts` file in the `tests/` directory. Use Playwright's `test` and `expect` assertions.
-
-Example:
 ```typescript
 import { test, expect } from "@playwright/test";
 
-test("should load the home page", async ({ page }) => {
-  await page.goto("/");
-  await expect(page.locator("h1")).toContainText("Stefan Tudose");
+test.describe("Portfolio Navigation & Static Makeover", () => {
+  test("should render the home page copy and navigate to Florin Gold Gym case study", async ({ page }) => {
+    // 1. Visit the home page
+    await page.goto("/");
+
+    // 2. Verify homepage headline and humbler, business-focused copy
+    await expect(page.locator("h1")).toContainText("Let's build technology that actually solves your business problems.");
+    await expect(page.locator("text=Hi, I'm Stefan. I'm a software engineer and former startup founder.")).toBeVisible();
+
+    // 3. Verify that the three projects are present in the list
+    await expect(page.locator("text=TechVector").first()).toBeVisible();
+    await expect(page.locator("text=Florin Gold Gym").first()).toBeVisible();
+    await expect(page.locator("text=Kaizen").first()).toBeVisible();
+
+    // 4. Verify that Kaizen startup story has its own repurposed section
+    await expect(page.locator("text=Kaizen: What my first startup taught me about your business")).toBeVisible();
+
+    // 5. Navigate to the Florin Gold Gym page by clicking the project card
+    const florinGymLink = page.locator("a[href='/florin-gold-gym']");
+    await expect(florinGymLink).toBeVisible();
+    await florinGymLink.click();
+
+    // 6. Verify URL has changed to /florin-gold-gym
+    await expect(page).toHaveURL(/\/florin-gold-gym/);
+
+    // 7. Verify Florin Gold Gym case study title & content
+    await expect(page.locator("h1")).toContainText("Florin Gold Gym: Building a System an Entire Business Bets Its Life On.");
+
+    // 8. Test back button links back to the main portfolio page
+    const backBtn = page.locator("text=Back to Portfolio");
+    await expect(backBtn).toBeVisible();
+    await backBtn.click();
+
+    // 9. Verify we are back on the homepage
+    await expect(page).toHaveURL(/\/$/);
+  });
 });
 ```

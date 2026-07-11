@@ -10,14 +10,13 @@ if (typeof window !== "undefined") {
 // Mock next/image so it renders as a standard img tag in testing environments
 vi.mock("next/image", () => {
   return {
-    default: (props: any) => {
+    default: (props: Record<string, unknown>) => {
       // Create a standard img tag from the props passed to next/image
-      // eslint-disable-next-line @next/next/no-img-element
       return React.createElement("img", {
         ...props,
         // next/image specifies src, alt, width, height, etc.
-        src: props.src,
-        alt: props.alt,
+        src: props.src as string,
+        alt: props.alt as string,
       });
     },
   };

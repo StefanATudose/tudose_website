@@ -13,40 +13,42 @@ export function StartupSection() {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16">
           {/* Content */}
           <div className="flex-1 text-center lg:text-left max-w-xl">
-            <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/80 text-sm font-medium mb-6">
-              <i className="fas fa-rocket mr-2"></i>
-              My Startup
+            <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-purple-200 text-sm font-medium mb-6">
+              <i className="fas fa-brain mr-2"></i>
+              Lessons from the Field
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              kaiZen
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
+              Kaizen: What my first startup taught me about your business
             </h2>
-            <p className="text-xl text-white/80 mb-4">
-              TBA
+            <p className="text-lg text-white/80 mb-6 font-light leading-relaxed">
+              I built Kaizen, an Android distraction-blocker designed to be completely bypass-proof. It was a technical success—I had to go deep into Android system APIs, create monochrome UI configurations, and implement secure accountability partner wait periods. 
             </p>
-            <p className="text-white/60 mb-8">
-              TODO: CHANGE FocusFlow is an innovative Android application designed to help users reduce screen time and build healthier digital habits. Operating at the system level, it provides intelligent insights, app usage analytics, and customizable focus modes that help users reclaim their time and attention.
+            <p className="text-white/60 mb-8 text-sm leading-relaxed">
+              But as a business, it fell short. It taught me the hard way that writing great code is only half the battle. You also need a clear distribution path, customer acquisition strategies, and solid product-market fit. Today, I bring that founder&apos;s empathy to your project: I won&apos;t just build what you ask for; I&apos;ll help you think through whether the feature makes business sense for your bottom line.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-              <div className="flex items-center gap-2 text-white/80">
-                <i className="fas fa-chart-line text-purple-400"></i>
-                <span>Usage Analytics</span>
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8">
+              <div className="flex items-center gap-2 text-white/80 text-sm">
+                <i className="fas fa-shield-alt text-purple-400"></i>
+                <span>Bypass-Proof Wait Loops</span>
               </div>
-              <div className="flex items-center gap-2 text-white/80">
-                <i className="fas fa-bell-slash text-purple-400"></i>
-                <span>Focus Modes</span>
+              <div className="flex items-center gap-2 text-white/80 text-sm">
+                <i className="fas fa-eye-slash text-purple-400"></i>
+                <span>Monochrome UI Psychology</span>
               </div>
-              <div className="flex items-center gap-2 text-white/80">
-                <i className="fas fa-brain text-purple-400"></i>
-                <span>Smart Insights</span>
+              <div className="flex items-center gap-2 text-white/80 text-sm">
+                <i className="fas fa-user-friends text-purple-400"></i>
+                <span>Accountability Partners</span>
               </div>
             </div>
-            <div className="mt-8">
+            <div>
               <a
-                href="#"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#0a1628] rounded-full font-medium hover:bg-white/90 transition-colors"
+                href="https://kaizen.stefantudose.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#0a1628] rounded-full font-medium hover:bg-white/90 transition-colors shadow-md"
               >
                 <i className="fa-solid fa-globe"></i>
-                Visit Website
+                Visit Kaizen Site
               </a>
             </div>
           </div>

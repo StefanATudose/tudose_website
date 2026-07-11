@@ -8,15 +8,30 @@ This document describes the high-level architecture and structure of the persona
 *   **Styling**: Tailwind CSS
 *   **Language**: TypeScript
 
-## Current Structure
-At the moment, the entire project is implemented as a single Home Page (`app/page.tsx`) that coordinates rendering several responsive sections and manages conversational state using a custom React hook.
+## Project Structure
+The website is structured using Next.js App Router, split between the main homepage, a dedicated case study sub-route, modular UI sections, and type configurations.
+
+```mermaid
+graph TD
+    A[app/ Root] --> B[Homepage Route: app/page.tsx]
+    A --> C[Case Study Route: app/florin-gold-gym/page.tsx]
+    A --> D[Layout: app/layout.tsx]
+    A --> E[Components: app/components/sections/]
+    A --> F[Data: app/data/index.ts]
+    A --> G[Types: app/types/index.ts]
+```
 
 ### Key Directories & Files
-*   **`app/layout.tsx`**: Defines the global HTML wrapper, metadata, and stylesheet imports.
-*   **`app/page.tsx`**: Serves as the main coordinator for the landing page sections.
-*   **`app/components/`**: Houses modular UI components:
-    *   `sections/`: Hero section, Projects grid, Startup mockup, and Footer.
-    *   `chat/`: Sub-components for the interactive chatbot widget (input, message bubbles, indicators).
-*   **`app/hooks/useChat.ts`**: Encapsulates the interactive state logic and scrolling behaviors for the chatbot widget.
-*   **`app/data/index.ts`**: Static configuration data for projects, chat auto-responses, and screen-time statistics.
-*   **`app/types/index.ts`**: Core TypeScript interface definitions (e.g., `Message`, `Project`).
+
+*   **`app/layout.tsx`**: Defines the global HTML wrapper, meta tags, and global CSS imports.
+*   **`app/page.tsx`**: Serves as the main coordinator for the landing page sections (Server Component).
+*   **`app/florin-gold-gym/page.tsx`**: Dedicated case study page with gym-themed dark styling, local React-state carousel slider, and video container mockup.
+*   **`app/components/sections/`**: Modular layout blocks:
+    *   `HeroSection.tsx`: Core copywriting, buttons, and consulting pillars grid.
+    *   `ProjectsSection.tsx`: Feeds project data to project cards.
+    *   `ProjectCard.tsx`: Individual project card with Next.js `<Image />` rendering and internal/external link handlers.
+    *   `StartupSection.tsx`: Showcases the Kaizen wellness project details.
+    *   `PhoneMockup.tsx`: Sleek, dark distraction-free phone UI mockup displaying Kaizen screen metrics.
+    *   `Footer.tsx`: Tagline and contact mail links.
+*   **`app/data/index.ts`**: Static copywriting data, subtitles, tags, and mockup details.
+*   **`app/types/index.ts`**: TypeScript type safety definitions (e.g. `Project`, `AppUsageItem`).

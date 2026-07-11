@@ -1,15 +1,14 @@
 # Data Persistence Documentation
 
-This document describes how data is managed in the application and outlines future considerations for database integration.
+This document describes how data and configuration are managed within the personal portfolio website.
 
 ## Current State
-The application operates entirely on the client side with no database or external storage connections:
+The website is designed as a fully static personal portfolio page. It does not connect to external databases, authentication servers, or dynamic persistence layers:
 
-*   **Static Data (`app/data/index.ts`)**: Holds project metadata, mockup data, and predefined chatbot responses.
-*   **In-Memory Chat State (`app/hooks/useChat.ts`)**: Message logs are stored in standard React state. Conversations are reset whenever the browser page is refreshed.
+1.  **Static Configuration Data (`app/data/index.ts`)**: All project data, including copywriting, subtitles, tech stacks, links, and mobile screen-time data, is defined as typed TypeScript constants. This simplifies content updates and allows fast, zero-downtime deployments.
+2.  **Local UI State**: Temporary state required for interactive elements (such as the active slide index in the Florin Gold Gym screenshot carousel) is managed in-memory using standard React `useState` hooks.
 
 ## Future Considerations
-As the website scales, the following persistence layers can be introduced:
-1.  **Chat History**: Storing messages in a database (e.g., PostgreSQL or Redis) to maintain conversation history across sessions.
-2.  **Dynamic Projects CMS**: Connecting the projects grid to a database or headless CMS to allow updates without redeploying code.
-3.  **Real AI Integration**: Replacing the mock chatbot responses with a live AI endpoint (using a vector database for semantic search).
+If the portfolio requires database-driven functionality in the future:
+*   **Headless CMS Integration**: A headless CMS (such as Sanity, Contentful, or Strapi) can be integrated. Next.js can pull this data at build time using incremental static regeneration (ISR) to keep page loads fast.
+*   **Analytics / Contact Form Database**: A contact form handler can be wired to a serverless function connecting to a database (such as Supabase or Prisma) to record inquiries and messages.

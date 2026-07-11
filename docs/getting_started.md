@@ -4,7 +4,7 @@ This guide provides instructions on how to set up, run, and build the personal p
 
 ## Prerequisites
 
-Before setting up the project, ensure you have the following installed on your machine:
+Before setting up the project, ensure you have the following installed:
 *   **Node.js**: Version 20.x or higher is recommended.
 *   **npm**: Included with Node.js (version 10.x or higher).
 
@@ -22,10 +22,10 @@ Before setting up the project, ensure you have the following installed on your m
 
 ## Development Commands
 
-During development, you can use the following npm scripts defined in `package.json`:
+Use the following npm scripts defined in `package.json` to manage development, compilation, and testing:
 
 ### Run Development Server
-Starts the Next.js development server with hot-reloading at [http://localhost:3000](http://localhost:3000):
+Starts the Next.js development server at [http://localhost:3000](http://localhost:3000):
 ```bash
 npm run dev
 ```
@@ -37,41 +37,41 @@ npm run build
 ```
 
 ### Start Production Server
-Runs the compiled production build locally (requires `npm run build` to have run first):
+Runs the compiled production build locally (requires `npm run build` first):
 ```bash
 npm run start
 ```
 
 ### Code Linting
-Runs ESLint to analyze static code quality and find problems:
+Runs ESLint to check code syntax and rules compliance:
 ```bash
 npm run lint
 ```
 
-### Run Tests (Unit & Component)
-Runs the Vitest test suite to execute unit and component tests once:
+### Run Unit/Component Tests
+Runs the Vitest test suite once (configured to scan for `.test.ts` / `.test.tsx` files and ignore Playwright files):
 ```bash
 npm run test
 ```
 
 ### Run Tests in Watch Mode
-Starts Vitest in watch mode to automatically re-run tests on file changes:
+Starts Vitest in watch mode:
 ```bash
 npm run test:watch
 ```
 
 ### Run Integration Tests (Playwright)
-Runs the Playwright end-to-end integration tests (requires local server to be running or it will start one):
+Runs Playwright E2E tests targeting the local dev server on port 3000:
 ```bash
 npm run test:e2e
 ```
 
-## Project Settings & Configuration
+## Project Configuration Files
 
-*   **`package.json`**: Declares dependencies (`next`, `react`, `react-dom`), testing utilities, and scripts.
-*   **`tsconfig.json`**: Configures TypeScript compilation settings, including path aliases like `@/*` mapping to the root directory.
-*   **`next.config.ts`**: Contains Next.js-specific configurations.
-*   **`eslint.config.mjs`**: Contains ESLint rules and settings for linting JavaScript/TypeScript.
-*   **`vitest.config.mts` & `vitest.setup.ts`**: Configures Vitest testing environment with `happy-dom` and Jest DOM matchers.
-*   **`playwright.config.ts`**: Configures Playwright end-to-end browser integration tests.
-*   **`docs/testing.md`**: Detailed documentation explaining the test suite architecture and writing guide.
+*   **`package.json`**: Declares dependencies (`next`, `react`, `react-dom`), dev dependencies, and scripts.
+*   **`tsconfig.json`**: Configures TypeScript compiler settings and path aliases (`@/*`).
+*   **`next.config.ts`**: Next.js config (defines allowed remote patterns for Next.js `<Image />` component).
+*   **`eslint.config.mjs`**: Declares ESLint code rules.
+*   **`vitest.config.mts` & `vitest.setup.ts`**: Configures Vitest with `happy-dom` and mock configurations, excluding E2E directories.
+*   **`playwright.config.ts`**: Configures Playwright E2E browser integration settings.
+*   **`docs/testing.md`**: Detailed documentation explaining the test suite architecture.

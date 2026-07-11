@@ -1,53 +1,58 @@
 # Project Scope
 
-This document defines the scope, objectives, core features, and current status of the personal website for **A. Stefan Tudose**, AI Solutions Architect.
+This document defines the scope, objectives, core features, and current status of the personal website for **A. Stefan Tudose**, Software Engineer and Business Partner.
 
 ## Project Objectives
 
-1.  **Professional Showcase**: Establish a premium online presence highlighting expertise in Artificial Intelligence (specifically custom chatbots, Retrieval-Augmented Generation (RAG) systems, and autonomous AI Agents).
-2.  **Interactive Engagement**: Provide visitors with an immediate, hands-on demonstration of interactive AI technologies via a simulated chatbot.
-3.  **Product Highlights**: Showcase ongoing entrepreneurial efforts, specifically the Android utility application **FocusFlow** developed under the startup name **kaiZen**.
+1.  **Professional Storytelling Showcase**: Establish a premium online presence highlighting engineering expertise, positioning Stefan as a veteran technical partner rather than a pushy salesman.
+2.  **Focus on Real Results**: Highlight delivered, high-stakes operational software (specifically the Florin Gold Gym case study) to show real-world capabilities.
+3.  **Entrepreneurial Empathy**: Reflect on startup lessons (specifically the Kaizen Android project) to show business-first engineering values.
 
 ## Target Audience
 
-*   **Potential Clients**: Business owners, product managers, and engineering leaders seeking customized AI implementations.
+*   **Potential Clients**: Business owners, founders, and technical leaders seeking reliable system development, process automation, or technical audits.
 
 ## Core Features
 
-### 1. Hero & Simulated Chat Widget
-*   **Objective**: Demonstrate interactive capabilities directly upon landing.
-*   **Design**: Glassmorphism styling blending into a background of purple and blue gradients.
-*   **Functionality**:
-    *   **Collapsed State**: Displays "AI Stefan" greeting preview and avatar. Expands automatically when the input field is focused.
-    *   **Expanded State**: Displays a full messaging window with scrolling history, a typing indicator, and custom keyboard interaction support (Enter to send, prevent window scroll during focus).
-    *   **Mock AI Logic**: Simulates AI messaging using realistic delays and a rotating pool of expert responses focusing on RAG, agents, and scheduling.
+### 1. Hero & Consulting Pillars
+*   **Objective**: Introduce Stefan in a humble, friendly, yet authoritative tone.
+*   **Copy**: Centers around building systems that solve operational pain points and reduce technical risks.
+*   **Consulting Pillars Grid**:
+    *   *Technical Architecture*: Designing scalable, low-maintenance systems.
+    *   *Process Automation*: Connecting APIs, databases, and AI models to reduce operational overhead.
+    *   *Startup Advisory*: Providing scoping and viability advisory based on founder experiences.
 
-### 2. Featured Projects Grid
-*   **Objective**: Display case studies of custom AI applications.
-*   **Design**: Clean cards with hover translate-up and image scale-up animations, custom tags, and gradient boarders.
-*   **Current Projects**:
-    1.  *TechVector*: RAG, LangChain, pgvector, and GPT-4 implementation.
-    2.  *Agent TBA*: Autonomous AI agents using NLP and WebSockets.
-    3.  *Special Outputs TBA*: HIPAA-compliant medical symptom analyzer and appointment scheduler.
+### 2. Featured Case Studies Grid
+*   **Objective**: Present three core projects focused on benefits and business value:
+    1.  *TechVector*: AI RAG news assistant, showing what custom AI can do for the client's information operations.
+    2.  *Florin Gold Gym*: Next.js dashboard + Flutter app suite, managing operations for a high-traffic gym of 500+ members.
+    3.  *Kaizen*: Minimalist Android distraction-blocker built at the system level.
+*   **Behavior**:
+    *   External projects (TechVector, Kaizen) link out directly in a new tab.
+    *   Internal case studies (Florin Gold Gym) route to a dedicated page via Next.js `Link`.
 
-### 3. Startup Showcase (kaiZen - FocusFlow)
-*   **Objective**: Highlight FocusFlow, a system-level Android application.
-*   **Design**: Side-by-side section showing features alongside a CSS-rendered smartphone mockup (displaying screen-time usage analytics, progress rings, and specific app constraints).
+### 3. Dedicated Case Study Path (`/florin-gold-gym`)
+*   **Objective**: Show high-stakes engineering details.
+*   **Design**: Premium dark gym theme (`#121318` background, `#db5f32` accents).
+*   **Key Sections**:
+    *   *Real-World Stakes*: Explains that the gym operations depend 100% on the codebase.
+    *   *Interactive Carousel*: React-state slideshow displaying custom screen mockups (check-ins, scheduling, admin panel).
+    *   *Technical Highlights*: Breakdowns of turnstile trigger cooldowns, Netopia MobilPay webhook idempotency, and cancellation constraints.
+    *   *Video Testimonial Container*: Clean player mockup with space for a testimonial video.
 
 ### 4. Contact Footer
-*   **Objective**: Make communication easy.
-*   **Design**: Clean layout featuring Tudose's avatar, social icons (LinkedIn/GitHub), and email direct link (`contact@tudose.dev`).
+*   **Objective**: Simple direct call to action.
+*   **Design**: Clean layout featuring social links (LinkedIn/GitHub) and email direct link (`contact@tudose.dev`).
 
 ---
 
-## Current Implementation Status & Technical Debt
+## Current Implementation Status
 
-Since the project is currently in the initial frontend prototype phase, there are several "To Be Announced" (TBA) and placeholder items that represent outstanding tasks:
+All features are fully implemented. There are no placeholder, "TBA" strings, or mocked states in the repository.
 
-| Feature / Section | Current Code Reference | Status / TODO |
+| Feature / Section | Status | Notes |
 | :--- | :--- | :--- |
-| **TechVector Description** | `app/data/index.ts` (line 8) | Needs real copy replacing `"TBA ."` |
-| **Agent TBA Description** | `app/data/index.ts` (line 15) | Needs real copy replacing `"TBA."` |
-| **FocusFlow Description** | `app/components/sections/StartupSection.tsx` (line 27) | Contains prefix `"TODO: CHANGE FocusFlow..."` |
-| **FocusFlow URL Link** | `app/components/sections/StartupSection.tsx` (line 45) | Currently points to placeholder `"href="#"`"` |
-| **Chat Autoreply** | `app/hooks/useChat.ts` (line 101-116) | Uses basic in-memory `setTimeout` with mock replies instead of a real API endpoint. |
+| **TechVector Details** | Fully Implemented | Features copy explaining RAG benefits. |
+| **Florin Gold Gym Case Study** | Fully Implemented | Dedicated page with carousel and video elements. |
+| **Kaizen Story** | Fully Implemented | Bullet points details lessons in product-market fit. |
+| **E2E Test Coverage** | Fully Implemented | Playwright navigation tests verify page links and rendering. |

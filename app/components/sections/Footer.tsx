@@ -29,8 +29,8 @@ export function Footer() {
             <p className="text-white/60 text-lg mb-6">AI Solutions Architect</p>
 
             {/* Tagline */}
-            <p className="text-white/40 max-w-md mx-auto">
-              Transforming businesses with intelligent AI solutions. Let's build something amazing together.
+            <p className="text-white/50 max-w-md mx-auto text-sm font-light">
+              Helping businesses build reliable software and make sense of technology. Let&apos;s start a conversation.
             </p>
           </div>
 

@@ -1,18 +1,13 @@
-// Chat message type
-export interface Message {
-  id: number;
-  text: string;
-  sender: "user" | "ai";
-  timestamp: Date;
-}
-
 // Project data type
 export interface Project {
   id: number;
   title: string;
+  subtitle?: string;
   description: string;
   tags: string[];
   image: string;
+  link?: string;
+  isInternal?: boolean;
 }
 
 // App usage item type (for startup section phone mockup)
