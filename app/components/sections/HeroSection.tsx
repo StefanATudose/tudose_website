@@ -45,8 +45,8 @@ export function HeroSection() {
             <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-300 mb-4">
               <i className="fas fa-sitemap text-lg"></i>
             </div>
-            <h3 className="text-white font-semibold text-lg mb-2">Reliable Software Architecture</h3>
-            <p className="text-white/60 text-sm leading-relaxed font-light">
+            <h3 className="text-white font-semibold text-xl mb-3">Reliable Software Architecture</h3>
+            <p className="text-white/90 text-base leading-relaxed">
               Build software that&apos;s easier to maintain, faster to extend, and ready to grow with your business.
             </p>
           </div>
@@ -55,8 +55,8 @@ export function HeroSection() {
             <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-300 mb-4">
               <i className="fas fa-robot text-lg"></i>
             </div>
-            <h3 className="text-white font-semibold text-lg mb-2">Business Process Automation</h3>
-            <p className="text-white/60 text-sm leading-relaxed font-light">
+            <h3 className="text-white font-semibold text-xl mb-3">Business Process Automation</h3>
+            <p className="text-white/90 text-base leading-relaxed">
               Stop wasting billable hours on repetitive admin. I connect your existing tools and build smart data-retrieval systems so your team can focus on high-value work.
             </p>
           </div>
@@ -65,8 +65,8 @@ export function HeroSection() {
             <div className="w-10 h-10 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-300 mb-4">
               <i className="fas fa-lightbulb text-lg"></i>
             </div>
-            <h3 className="text-white font-semibold text-lg mb-2">Technical Advisory & Consulting</h3>
-            <p className="text-white/60 text-sm leading-relaxed font-light">
+            <h3 className="text-white font-semibold text-xl mb-3">Technical Advisory & Consulting</h3>
+            <p className="text-white/90 text-base leading-relaxed">
               Get straightforward, jargon-free advice. I help you evaluate software investments, plan your digital strategy, and avoid costly technical mistakes.
             </p>
           </div>
