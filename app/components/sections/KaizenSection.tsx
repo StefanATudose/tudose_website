@@ -20,20 +20,16 @@ export function KaizenSection() {
 
             <div className="space-y-4 text-white/80 font-light leading-relaxed text-base">
               <p>
-                I built <strong>Kaizen</strong>, a system-level Android distraction blocker, to solve a real digital 
-                wellness problem. Technically, it was a tour de force—integrating custom Android system APIs 
-                to create a bypass-proof focus loop.
+                I built <strong>Kaizen</strong>, a system-level Android distraction blocker. Technically, it was a tour 
+                de force—hacking custom system APIs to create a <strong>bypass-proof focus loop</strong>.
               </p>
               <p>
-                But commercially, it fell short. That failure was my real-world business degree. It taught me the 
-                hard way that writing great code is only half the battle. You also need a clear distribution path, 
-                a viable product-market fit, and a true understanding of customer acquisition costs.
+                Commercially, it fell short. <strong>That failure was my real-world business degree.</strong> It taught me 
+                the hard way that great code is useless without market viability, distribution, and unit economics.
               </p>
               <p>
-                When you hire me, you aren&apos;t getting an engineer who blindly writes code and throws confusing jargon 
-                at you. I speak in your terms—talking business strategy, operational risk, and return on investment. 
-                I partner with you as an equal to help you audit features and ensure that every line of code we write 
-                actually grows your bottom line.
+                When you hire me, <strong>I speak in your terms, not tech jargon</strong>. We will talk business strategy, 
+                risk, and ROI. I partner with you to audit your ideas and ensure <strong>every line of code grows your bottom line</strong>.
               </p>
             </div>
 

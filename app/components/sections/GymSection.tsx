@@ -48,18 +48,16 @@ export function GymSection() {
 
             <div className="space-y-4 text-white/75 font-light leading-relaxed text-base">
               <p>
-                A beautiful design is useless if it crashes when your business needs it most. At 
-                <strong> Florin Gold Gym</strong>, I delivered the entire digital infrastructure: a Next.js 
-                admin dashboard and custom Flutter mobile apps.
+                A beautiful design is useless if it crashes. For <strong>Florin Gold Gym</strong>, I delivered 
+                the entire digital infrastructure: a Next.js admin portal and custom Flutter mobile apps.
               </p>
               <p>
-                This isn&apos;t a personal project; it is the physical front door of the gym. Since access turnstiles, 
-                bookings, and membership billing are tied directly to database state, the client&apos;s daily operations 
-                depend entirely on this code.
+                This system runs a physical facility of <strong>500+ active members</strong>. Because bookings, recurring billing, 
+                and automated access turnstiles are tied directly to database state, <strong>this software is the heart of the business</strong>.
               </p>
               <p>
-                If the server goes down, operations freeze. By designing around idempotent webhook architectures 
-                and real-time state sync, I built a zero-downtime platform the business counts on 24/7.
+                <strong>If the server goes down, operations freeze.</strong> By implementing idempotent webhook systems 
+                and real-time state listeners, I engineered a <strong>zero-downtime architecture</strong> they count on 24/7.
               </p>
             </div>
 

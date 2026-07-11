@@ -16,11 +16,11 @@ This document defines the scope, objectives, core features, and current status o
 
 ### 1. Hero & Consulting Pillars
 *   **Objective**: Introduce Stefan in a humble, friendly, yet authoritative tone.
-*   **Copy**: Centers around building systems that solve operational pain points and reduce technical risks.
+*   **Copy**: Software that helps your business work smarter.
 *   **Consulting Pillars Grid**:
-    *   *Technical Architecture*: Designing scalable, low-maintenance systems.
-    *   *Process Automation*: Connecting APIs, databases, and AI models to reduce operational overhead.
-    *   *Startup Advisory*: Providing scoping and viability advisory based on founder experiences.
+    *   *Technical Architecture*: Designing scalable, low-maintenance systems so your technology grows seamlessly with your business.
+    *   *Process Automation*: Connecting APIs and databases to eliminate manual operations and reduce daily overhead.
+    *   *Startup Advisory*: Applying startup experience to help you audit product features and build only what customers want.
 
 ### 2. Dedicated Case Study Narrative Sections
 *   **Objective**: Present three sequential, storytelling-focused sections structured around client value:
@@ -52,7 +52,7 @@ All features are fully implemented. There are no placeholder, "TBA" strings, or 
 
 | Feature / Section | Status | Notes |
 | :--- | :--- | :--- |
-| **TechVector Details** | Fully Implemented | Features copy explaining RAG benefits. |
+| **TechVector Details** | Fully Implemented | Features concise copy explaining RAG business benefits. |
 | **Florin Gold Gym Case Study** | Fully Implemented | Dedicated page with carousel and video elements. |
-| **Kaizen Story** | Fully Implemented | Bullet points details lessons in product-market fit. |
+| **Kaizen Story** | Fully Implemented | Features streamlined copy explaining startup business lessons and ROI. |
 | **E2E Test Coverage** | Fully Implemented | Playwright navigation tests verify page links and rendering. |

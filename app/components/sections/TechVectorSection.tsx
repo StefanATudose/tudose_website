@@ -13,19 +13,16 @@ export function TechVectorSection() {
             
             <div className="space-y-4 text-black/70 font-light leading-relaxed text-base">
               <p>
-                Many business owners see artificial intelligence as abstract or gimmicky. I built 
-                <strong> TechVector</strong>—a live, production-grade research assistant—to make the practical 
-                value of custom AI concrete.
+                AI doesn&apos;t have to be abstract. I built <strong>TechVector</strong>—a live research assistant—to 
+                prove the <strong>practical value of custom AI</strong> in daily business operations.
               </p>
               <p>
-                Instead of simple keyword matches, it reads and understands a massive archive of technical 
-                articles semantically, understanding the context behind a user&apos;s intent. It demonstrates how a 
-                RAG (Retrieval-Augmented Generation) system can automate hours of manual searching.
+                Instead of matching words, it <strong>reads and understands files semantically</strong>. By capturing 
+                the context behind a query, it <strong>automates hours of manual search and summarization</strong>.
               </p>
               <p>
-                For your business, this opens up immediate possibilities: converting raw folders of PDFs, invoice histories, 
-                customer logs, or partner contracts into instant knowledge assistants that answer questions and 
-                run operations automatically.
+                For you, this means converting raw PDFs, invoices, support logs, or partner contracts into 
+                <strong> secure knowledge assistants</strong> that answer questions and run research operations automatically.
               </p>
             </div>
 
