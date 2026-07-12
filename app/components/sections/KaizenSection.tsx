@@ -1,5 +1,5 @@
 import React from "react";
-import { PhoneMockup } from "./PhoneMockup";
+import Image from "next/image";
 
 export function KaizenSection() {
   return (
@@ -12,43 +12,83 @@ export function KaizenSection() {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-          {/* Content */}
-          <div className="lg:col-span-7 space-y-6 text-left">
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight">
-              3. Entrepreneurial Strategy: Kaizen: What my first startup taught me about your business
+          {/* Content Side */}
+          <div className="lg:col-span-6 space-y-8 text-left">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+              Thinking like a founder: Why you need a partner, not just a contractor
             </h2>
 
-            <div className="space-y-4 text-white/80 font-light leading-relaxed text-base">
+            <div className="space-y-6 text-white/90 font-medium leading-relaxed text-lg md:text-xl">
               <p>
-                I built <strong>Kaizen</strong>, a system-level Android distraction blocker. Technically, it was a tour 
-                de force—hacking custom system APIs to create a <strong>bypass-proof focus loop</strong>.
+                Most developers are hired to write code, but great software starts with understanding why the code needs to exist in the first place.
               </p>
               <p>
-                Commercially, it fell short. <strong>That failure was my real-world business degree.</strong> It taught me 
-                the hard way that great code is useless without market viability, distribution, and unit economics.
+                When I built <strong>Kaizen</strong>, a distraction blocker that reached thousands of users, I did not just write the Android code and database queries.
               </p>
               <p>
-                When you hire me, <strong>I speak in your terms, not tech jargon</strong>. We will talk business strategy, 
-                risk, and ROI. I partner with you to audit your ideas and ensure <strong>every line of code grows your bottom line</strong>.
+                I had to handle product strategy, customer acquisition, marketing, and user feedback.
+              </p>
+              <p>
+                That experience completely changed how I view software engineering.
+              </p>
+              <p>
+                I stopped looking at projects as a list of technical tasks and started looking at them as business investments.
+              </p>
+              <p>
+                When we work together, I will not just blindly write code; I will partner with you to audit features, simplify scope, and save you money.
+              </p>
+              <p>
+                I understand the pressure of keeping a business profitable, managing operational costs, and hitting milestones.
+              </p>
+              <p>
+                You do not need another contractor who just completes tickets and asks for approval.
+              </p>
+              <p>
+                You need a technical partner who cares about your business outcome as much as you do.
               </p>
             </div>
 
-            <div className="pt-2">
+            <div className="pt-6">
               <a
                 href="https://kaizen.stefantudose.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-purple-200 hover:text-purple-300 font-semibold transition-colors group"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl text-center"
               >
                 <span>Visit the Kaizen site</span>
-                <i className="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                <i className="fas fa-arrow-right text-sm"></i>
               </a>
             </div>
           </div>
 
-          {/* App mockup */}
-          <div className="lg:col-span-5 flex justify-center">
-            <PhoneMockup />
+          {/* Browser Mockup Side */}
+          <div className="lg:col-span-6 flex flex-col items-center justify-center w-full">
+            <div className="w-full aspect-video bg-gray-950 rounded-2xl p-2 shadow-2xl border border-white/10 relative flex flex-col">
+              {/* Browser header with window controls */}
+              <div className="flex items-center gap-1.5 px-3 py-2 border-b border-white/5 bg-[#0f1115] rounded-t-xl shrink-0">
+                <div className="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-green-500/80"></div>
+                <div className="flex-grow flex justify-center text-[10px] text-white/30 font-mono select-none">
+                  kaizen.stefantudose.com
+                </div>
+              </div>
+              {/* Screen viewport */}
+              <div className="w-full flex-grow rounded-b-xl overflow-hidden relative">
+                <Image
+                  src="/images/kaizen-0.png"
+                  alt="Kaizen desktop landing page hero"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                />
+              </div>
+            </div>
+            {/* Description underneath */}
+            <p className="text-white/50 text-xs text-center mt-6 max-w-sm leading-relaxed">
+              The homepage of Kaizen, a project built with startup principles, unit economics, and real-world distribution in mind.
+            </p>
           </div>
         </div>
       </div>

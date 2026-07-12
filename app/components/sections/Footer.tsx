@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export function Footer() {
   return (
     <footer className="bg-[#0a1628] py-20 relative overflow-hidden">
@@ -13,17 +11,6 @@ export function Footer() {
         <div className="max-w-4xl mx-auto">
           {/* Main footer content */}
           <div className="text-center mb-12">
-            {/* Avatar */}
-            <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-6 ring-4 ring-purple-400/20 shadow-xl">
-              <Image
-                src="/tudose.jpeg"
-                alt="Tudose"
-                width={96}
-                height={96}
-                className="w-full h-full object-cover"
-              />
-            </div>
-
             {/* Name and title */}
             <h3 className="text-3xl font-bold text-white mb-2">A. Stefan Tudose</h3>
             <p className="text-white/60 text-lg mb-6">AI Solutions Architect</p>

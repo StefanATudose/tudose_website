@@ -6,8 +6,8 @@ test.describe("Portfolio Navigation & Static Makeover", () => {
     await page.goto("/");
 
     // 2. Verify homepage headline and humbler, business-focused copy
-    await expect(page.locator("h1")).toContainText("Let's build technology that actually solves your business problems.");
-    await expect(page.locator("text=Hi, I'm Stefan. I'm a software engineer and former startup founder.")).toBeVisible();
+    await expect(page.locator("h1")).toContainText("Turn your team's manual tasks into seamless, automated workflows.");
+    await expect(page.locator("text=Hi, I'm Stefan. I translate complex technical problems into simple, reliable software solutions for growing businesses.")).toBeVisible();
 
     // 3. Verify that the three projects are present in the list
     await expect(page.locator("text=TechVector").first()).toBeVisible();
@@ -15,7 +15,7 @@ test.describe("Portfolio Navigation & Static Makeover", () => {
     await expect(page.locator("text=Kaizen").first()).toBeVisible();
 
     // 4. Verify that Kaizen startup story has its own repurposed section
-    await expect(page.locator("text=Kaizen: What my first startup taught me about your business")).toBeVisible();
+    await expect(page.locator("text=Thinking like a founder: Why you need a partner, not just a contractor")).toBeVisible();
 
     // 5. Navigate to the Florin Gold Gym page by clicking the project card
     const florinGymLink = page.locator("a[href='/florin-gold-gym']");

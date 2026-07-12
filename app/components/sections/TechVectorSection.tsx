@@ -62,9 +62,6 @@ export function TechVectorSection() {
                 Imagine <strong>invoices processed automatically, support tickets categorized instantly, or CRM records updated without manual work.</strong>
               </p>
               <p>
-                AI can monitor operations, extract information from documents, flag anomalies, and help teams make faster decisions.
-              </p>
-              <p>
                 For organizations with large knowledge bases, <strong>AI can also become an expert on your internal documentation</strong>.
               </p>
               <p>

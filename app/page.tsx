@@ -1,9 +1,11 @@
-import { HeroSection, TechVectorSection, GymSection, KaizenSection, Footer } from "@/app/components/sections";
+import { HeroSection, ServicesSection, TechVectorSection, GymSection, KaizenSection, Footer } from "@/app/components/sections";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <HeroSection />
+
+      <ServicesSection />
 
       {/* 1. What I can build: Custom AI & RAG */}
       <TechVectorSection />

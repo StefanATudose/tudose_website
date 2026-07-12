@@ -336,7 +336,7 @@ export default function FlorinGoldGymCaseStudy() {
             </div>
 
             {/* Simulated UI Screen Render */}
-            <div className="shrink-0 relative w-72 h-140 bg-gray-950 rounded-[2.5rem] p-3 shadow-2xl border-4 border-white/10 flex items-center justify-center">
+            <div className="shrink-0 relative w-72 h-[560px] max-w-full bg-[#0F1115] rounded-[2.5rem] p-3 shadow-2xl border-4 border-white/10 flex items-center justify-center">
               <div className="w-full h-full rounded-[2rem] overflow-hidden relative bg-[#191A1F]">
                 {/* Active slide view */}
                 {screenshots[activeSlide].screenContent}
@@ -446,9 +446,9 @@ export default function FlorinGoldGymCaseStudy() {
           <p className="text-sm text-white/60 mb-8 max-w-md mx-auto leading-relaxed font-light">
             I partner with businesses to build robust, zero-downtime platforms. Let&apos;s discuss your requirements.
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="mailto:contact@tudose.dev"
+              href="mailto:contact@stefantudose.com"
               className="px-6 py-3 bg-[#DB5F32] hover:bg-[#c25026] text-white font-medium rounded-full transition-all shadow-md"
             >
               Get in Touch

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -12,63 +14,61 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 py-24 flex flex-col items-center">
-        {/* Intro copy */}
-        <div className="text-center max-w-4xl mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
-            Turn your team&apos;s manual tasks into seamless, automated workflows.
-          </h1>
-          <p className="text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mx-auto">
-            Hi, I&apos;m Stefan. I translate complex technical problems into simple, reliable software solutions for growing businesses.
-          </p>
-        </div>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 mb-16">
-          <a
-            href="#projects"
-            className="px-8 py-4 bg-white text-[#0a1628] rounded-full font-medium hover:bg-white/90 transition-all shadow-lg hover:shadow-xl text-center"
-          >
-            Explore My Work
-          </a>
-          <a
-            href="mailto:contact@tudose.dev"
-            className="px-8 py-4 border border-white/20 text-white rounded-full font-medium hover:bg-white/10 transition-all text-center"
-          >
-            Book a Discovery Call
-          </a>
-        </div>
-
-        {/* Key Expertise Grid (Humble consulting pillars) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-white/20 transition-all flex flex-col items-center text-center">
-            <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-300 mb-4">
-              <i className="fas fa-sitemap text-lg"></i>
-            </div>
-            <h3 className="text-white font-semibold text-xl mb-3">Reliable Software Architecture</h3>
-            <p className="text-white/90 text-base leading-relaxed">
-              Build software that&apos;s easier to maintain, faster to extend, and ready to grow with your business.
+      <div className="relative z-10 container mx-auto px-6 py-16 lg:py-24 min-h-screen flex flex-col justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-stretch w-full">
+          {/* Left Column (Subtitle & CTAs) - bottom-left aligned */}
+          <div className="lg:col-span-4 flex flex-col justify-end items-center lg:items-start text-center lg:text-left order-3 lg:order-1 mt-8 lg:mt-0 min-h-0 lg:self-end lg:pb-12">
+            <span className="text-sm font-light text-purple-300/80 mb-3 block lowercase tracking-wider">
+              let&apos;s work together
+            </span>
+            <p className="text-xl sm:text-2xl md:text-3xl lg:text-[1.75rem] xl:text-[2.15rem] font-bold text-white/90 tracking-tight leading-tight max-w-md">
+              Hi, I&apos;m Stefan. I translate complex technical problems into simple, reliable software solutions for growing businesses.
             </p>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-row gap-3 mt-8 justify-center lg:justify-start flex-wrap w-full">
+              <a
+                href="mailto:contact@stefantudose.com"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#7c3aed] text-white rounded-xl font-semibold hover:bg-[#6d28d9] transition-all shadow-lg shadow-purple-500/20 text-sm md:text-base border border-transparent"
+              >
+                <span>Book a Discovery Call</span>
+                <i className="fas fa-calendar-alt text-xs"></i>
+              </a>
+              <a
+                href="#projects"
+                className="inline-flex items-center gap-2 px-6 py-3.5 border border-white/20 text-white/90 rounded-xl font-medium hover:bg-white/5 transition-all text-sm md:text-base"
+              >
+                <span>Explore My Work</span>
+              </a>
+            </div>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-white/20 transition-all flex flex-col items-center text-center">
-            <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-300 mb-4">
-              <i className="fas fa-robot text-lg"></i>
+          {/* Middle Column (Image) - centered and huge */}
+          <div className="lg:col-span-4 flex items-center justify-center order-2 lg:self-center">
+            <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-[350px] lg:h-[350px] xl:w-[440px] xl:h-[440px] rounded-full overflow-hidden ring-12 ring-white/5 shadow-2xl animate-float bg-linear-to-b from-purple-500/10 to-blue-500/10 flex-shrink-0">
+              <Image
+                src="/tudose.jpeg"
+                alt="Stefan Tudose"
+                fill
+                sizes="(max-width: 640px) 256px, (max-width: 768px) 288px, (max-width: 1024px) 320px, (max-width: 1280px) 350px, 440px"
+                className="w-full h-full object-cover"
+                priority
+              />
             </div>
-            <h3 className="text-white font-semibold text-xl mb-3">Business Process Automation</h3>
-            <p className="text-white/90 text-base leading-relaxed">
-              Stop wasting billable hours on repetitive admin. I connect your existing tools and build smart data-retrieval systems so your team can focus on high-value work.
-            </p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-white/20 transition-all flex flex-col items-center text-center">
-            <div className="w-10 h-10 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-300 mb-4">
-              <i className="fas fa-lightbulb text-lg"></i>
+          {/* Right Column (Title) - top-right aligned */}
+          <div className="lg:col-span-4 flex flex-col justify-start items-center lg:items-end text-center lg:text-right order-1 lg:order-3 min-h-0 lg:self-start lg:pt-12">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.5rem] xl:text-[3.2rem] font-bold text-white tracking-tight leading-tight max-w-md">
+              Turn your team&apos;s manual tasks into seamless, automated workflows.
+            </h1>
+            
+            {/* Scroll Indicator Arrow matching design */}
+            <div className="mt-8 hidden lg:block animate-bounce">
+              <a href="#services" className="text-white/40 hover:text-white/80 transition-colors" aria-label="Scroll down">
+                <i className="fas fa-arrow-down text-lg"></i>
+              </a>
             </div>
-            <h3 className="text-white font-semibold text-xl mb-3">Technical Advisory & Consulting</h3>
-            <p className="text-white/90 text-base leading-relaxed">
-              Get straightforward, jargon-free advice. I help you evaluate software investments, plan your digital strategy, and avoid costly technical mistakes.
-            </p>
           </div>
         </div>
       </div>
