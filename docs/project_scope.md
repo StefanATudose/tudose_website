@@ -14,15 +14,23 @@ This document defines the scope, objectives, core features, and current status o
 
 ## Core Features
 
-### 1. Hero & Consulting Pillars
+### 1. Hero Section
 *   **Objective**: Introduce Stefan in a humble, friendly, yet authoritative tone.
-*   **Copy**: Software that helps your business work smarter.
-*   **Consulting Pillars Grid**:
-    *   *Technical Architecture*: Designing scalable, low-maintenance systems so your technology grows seamlessly with your business.
-    *   *Process Automation*: Connecting APIs and databases to eliminate manual operations and reduce daily overhead.
-    *   *Startup Advisory*: Applying startup experience to help you audit product features and build only what customers want.
+*   **Layout**: A balanced 3-column split design with Stefan's avatar centered (featuring a glowing ring and animation), the H1 Title aligned to the top-right, and the Subheading/CTAs aligned to the bottom-left (pushed down to create a distinct height difference).
+*   **Copy**: 
+    *   Title: *Turn your team's manual tasks into seamless, automated workflows.*
+    *   Subtitle: *Hi, I'm Stefan. I translate complex technical problems into simple, reliable software solutions for growing businesses.*
+*   **CTAs**: Compact and high-contrast buttons, featuring a primary violet `"Book a Discovery Call"` button and a secondary `"Explore My Work"` outline button.
 
-### 2. Dedicated Case Study Narrative Sections
+### 2. Services Section
+*   **Objective**: Outline Stefan's primary consulting pillars in a dedicated, high-contrast section.
+*   **Design**: Responsive grid of three centered cards with centered icons, titles, and descriptions using the one-sentence-per-line readability standard:
+    *   *Reliable Software Architecture*: Designing scalable, low-maintenance systems so your technology grows seamlessly with your business.
+    *   *Business Process Automation*: Connecting APIs and databases to eliminate manual operations and reduce daily overhead.
+    *   *Technical Advisory & Consulting*: Straightforward, jargon-free advice to evaluate software investments and avoid costly technical mistakes.
+*   **CTA**: A prominent `"Let's discuss your project"` pill button at the bottom pointing to the contact email.
+
+### 3. Dedicated Case Study Narrative Sections
 *   **Objective**: Present three sequential, storytelling-focused sections structured around client value:
     1.  *TechVector (What I Can Build)*: Custom AI & RAG system demonstrating how unstructured data can automate research and operations.
     2.  *Florin Gold Gym (Experience in Delivery)*: High-stakes software managing a gym of 500+ members, demonstrating 24/7 reliability where downtime is not an option.
@@ -31,18 +39,18 @@ This document defines the scope, objectives, core features, and current status o
     *   External projects (TechVector, Kaizen) link out directly in new tabs.
     *   Internal case study (Florin Gold Gym) features a clean teaser block with a direct call-to-action routing to the dedicated page via Next.js `Link`.
 
-### 3. Dedicated Case Study Path (`/florin-gold-gym`)
+### 4. Dedicated Case Study Path (`/florin-gold-gym`)
 *   **Objective**: Show high-stakes engineering details.
 *   **Design**: Premium dark gym theme (`#121318` background, `#db5f32` accents).
 *   **Key Sections**:
     *   *Real-World Stakes*: Explains that the gym operations depend 100% on the codebase.
-    *   *Interactive Carousel*: React-state slideshow displaying custom screen mockups (check-ins, scheduling, admin panel).
+    *   *Interactive Carousel*: React-state slideshow displaying custom screen mockups (check-ins, scheduling, admin panel) in a fully responsive simulated phone frame.
     *   *Technical Highlights*: Breakdowns of turnstile trigger cooldowns, Netopia MobilPay webhook idempotency, and cancellation constraints.
     *   *Video Testimonial Container*: Clean player mockup with space for a testimonial video.
 
-### 4. Contact Footer
+### 5. Contact Footer
 *   **Objective**: Simple direct call to action.
-*   **Design**: Clean layout featuring social links (LinkedIn/GitHub) and email direct link (`contact@tudose.dev`).
+*   **Design**: Clean layout featuring social links (LinkedIn/GitHub) and email direct link (`contact@stefantudose.com`) with the duplicate avatar image removed to reduce redundancy.
 
 ---
 

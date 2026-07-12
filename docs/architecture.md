@@ -27,11 +27,12 @@ graph TD
 *   **`app/page.tsx`**: Serves as the main coordinator for the landing page sections (Server Component).
 *   **`app/florin-gold-gym/page.tsx`**: Dedicated case study page with gym-themed dark styling, local React-state carousel slider, and video container mockup.
 *   **`app/components/sections/`**: Modular layout blocks:
-    *   `HeroSection.tsx`: Core copywriting, buttons, and consulting pillars grid.
+    *   `HeroSection.tsx`: Responsive 3-column split layout (Title on top-right, Subheading/CTAs on bottom-left, large avatar centered).
+    *   `ServicesSection.tsx`: Houses the three consulting pillars with centered contents directly below the Hero.
     *   `TechVectorSection.tsx`: Showcases the custom AI RAG capability (What I Can Build).
     *   `GymSection.tsx`: Highlights the mission-critical check-in & payment suite (Experience in Delivery).
     *   `KaizenSection.tsx`: Details startup lessons and business consultation values (Business Background).
     *   `PhoneMockup.tsx`: Sleek, dark distraction-free phone UI mockup displaying Kaizen screen metrics.
-    *   `Footer.tsx`: Tagline and contact mail links.
+    *   `Footer.tsx`: Cleaned contact footer with the avatar image removed and contact mail standardized.
 *   **`app/data/index.ts`**: Static copywriting data, subtitles, tags, and mockup details.
 *   **`app/types/index.ts`**: TypeScript type safety definitions (e.g. `Project`, `AppUsageItem`).
