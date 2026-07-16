@@ -62,7 +62,7 @@ export function HeroSection() {
           <div className="hidden lg:block lg:col-span-6 lg:order-2 pointer-events-none"></div>
 
           {/* Right Column (Title) - top-right aligned */}
-          <div className="lg:col-span-3 flex flex-col justify-start items-center lg:items-end text-center lg:text-right order-1 lg:order-3 min-h-0 lg:self-start lg:pt-0 lg:-translate-y-8 relative z-10">
+          <div className="lg:col-span-3 flex flex-col justify-start items-center lg:items-end text-center lg:text-right order-1 lg:order-3 min-h-0 lg:self-start lg:pt-0 lg:-translate-y-30 relative z-10">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.7rem] xl:text-[3.5rem] font-bold text-white tracking-tight leading-tight max-w-xl">
               Turn manual tasks into seamless, automated workflows.
             </h1>
