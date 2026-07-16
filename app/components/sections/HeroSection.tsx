@@ -32,7 +32,7 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-stretch w-full">
           {/* Left Column (Subtitle & CTAs) - bottom-left aligned */}
           <div className="lg:col-span-3 flex flex-col justify-end items-center lg:items-start text-center lg:text-left order-3 lg:order-1 mt-8 lg:mt-0 min-h-0 lg:self-end lg:pb-0 lg:translate-y-12 relative z-10">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[3.6rem] xl:text-[4.2rem] font-bold text-white tracking-tight leading-none">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[2.5rem] xl:text-[2.8rem] font-bold text-white tracking-tight leading-none">
               Hi, I&apos;m Stefan.
             </h2>
             <p className="text-lg sm:text-xl lg:text-xl text-purple-200/70 font-medium mt-4 max-w-sm">
@@ -42,17 +42,18 @@ export function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-row gap-3 mt-8 justify-center lg:justify-start flex-wrap w-full">
               <a
-                href="mailto:contact@stefantudose.com"
+                href="#techvector"
                 className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#7c3aed] text-white rounded-xl font-semibold hover:bg-[#6d28d9] transition-all shadow-lg shadow-purple-500/20 text-sm md:text-base border border-transparent"
+              >
+                <span>Explore My Work</span>
+                <i className="fas fa-arrow-right text-xs"></i>
+              </a>
+              <a
+                href="mailto:contact@stefantudose.com"
+                className="inline-flex items-center gap-2 px-6 py-3.5 border border-white/20 text-white/90 rounded-xl font-medium hover:bg-white/5 transition-all text-sm md:text-base"
               >
                 <span>Book a Discovery Call</span>
                 <i className="fas fa-calendar-alt text-xs"></i>
-              </a>
-              <a
-                href="#techvector"
-                className="inline-flex items-center gap-2 px-6 py-3.5 border border-white/20 text-white/90 rounded-xl font-medium hover:bg-white/5 transition-all text-sm md:text-base"
-              >
-                <span>Explore My Work</span>
               </a>
             </div>
           </div>
@@ -62,8 +63,8 @@ export function HeroSection() {
 
           {/* Right Column (Title) - top-right aligned */}
           <div className="lg:col-span-3 flex flex-col justify-start items-center lg:items-end text-center lg:text-right order-1 lg:order-3 min-h-0 lg:self-start lg:pt-0 lg:-translate-y-8 relative z-10">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.2rem] xl:text-[2.6rem] font-bold text-white tracking-tight leading-tight max-w-xl">
-              Turn your team&apos;s manual tasks into seamless, automated workflows.
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.7rem] xl:text-[3.5rem] font-bold text-white tracking-tight leading-tight max-w-xl">
+              Turn manual tasks into seamless, automated workflows.
             </h1>
           </div>
         </div>

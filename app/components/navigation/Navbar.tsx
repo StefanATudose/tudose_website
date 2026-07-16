@@ -9,7 +9,7 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 py-6 px-6 md:px-8 transition-all duration-300 bg-transparent backdrop-blur-sm border-b border-white/5">
       <div className="container mx-auto flex items-center justify-between">
         <a href="#" className="text-xl font-bold tracking-tight text-white">
-          Stefan Tudose
+          TUDOSE
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -66,7 +66,7 @@ export function Navbar() {
             My startup
           </a>
           <a
-            href="#footer"
+            href="#contact"
             onClick={() => setIsOpen(false)}
             className="text-sm font-medium text-white/70 hover:text-white transition-colors py-2"
           >
