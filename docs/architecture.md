@@ -26,8 +26,10 @@ graph TD
 *   **`app/layout.tsx`**: Defines the global HTML wrapper, meta tags, and global CSS imports.
 *   **`app/page.tsx`**: Serves as the main coordinator for the landing page sections (Server Component).
 *   **`app/florin-gold-gym/page.tsx`**: Dedicated case study page with gym-themed dark styling, local React-state carousel slider, and video container mockup.
+*   **`app/components/navigation/`**: Navigation items:
+    *   `Navbar.tsx`: Minimalist, transparent client-side navbar with a responsive mobile drawer menu and anchor smooth-scrolling links.
 *   **`app/components/sections/`**: Modular layout blocks:
-    *   `HeroSection.tsx`: Responsive 3-column split layout (Title on top-right, Subheading/CTAs on bottom-left, large avatar centered).
+    *   `HeroSection.tsx`: Responsive 3-column split layout (Title on top-right, Subheading/CTAs on bottom-left, large bottom-anchored avatar centered).
     *   `ServicesSection.tsx`: Houses the three consulting pillars with centered contents directly below the Hero.
     *   `TechVectorSection.tsx`: Showcases the custom AI RAG capability (What I Can Build).
     *   `GymSection.tsx`: Highlights the mission-critical check-in & payment suite (Experience in Delivery).

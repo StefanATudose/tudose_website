@@ -16,11 +16,11 @@ This document defines the scope, objectives, core features, and current status o
 
 ### 1. Hero Section
 *   **Objective**: Introduce Stefan in a humble, friendly, yet authoritative tone.
-*   **Layout**: A balanced 3-column split design with Stefan's avatar centered (featuring a glowing ring and animation), the H1 Title aligned to the top-right, and the Subheading/CTAs aligned to the bottom-left (pushed down to create a distinct height difference).
+*   **Layout**: A balanced 3-column split design (`4-4-4` grid ratio) with Stefan's bottom-anchored avatar centered (transparent backdrop element with no borders or circular cropping), the H1 Title aligned to the top-right (pulled upwards), and the Subheading/CTAs aligned to the bottom-left (shifted downwards).
 *   **Copy**: 
-    *   Title: *Turn your team's manual tasks into seamless, automated workflows.*
+    *   Title: *Turn manual tasks into seamless, automated workflows.*
     *   Subtitle: *Hi, I'm Stefan. I translate complex technical problems into simple, reliable software solutions for growing businesses.*
-*   **CTAs**: Compact and high-contrast buttons, featuring a primary violet `"Book a Discovery Call"` button and a secondary `"Explore My Work"` outline button.
+*   **CTAs**: Compact and high-contrast buttons, featuring a primary violet `"Explore My Work"` button with a right arrow icon, and a secondary `"Book a Discovery Call"` outline button with a calendar icon.
 
 ### 2. Services Section
 *   **Objective**: Outline Stefan's primary consulting pillars in a dedicated, high-contrast section.

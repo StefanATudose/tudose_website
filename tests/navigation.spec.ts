@@ -6,8 +6,9 @@ test.describe("Portfolio Navigation & Static Makeover", () => {
     await page.goto("/");
 
     // 2. Verify homepage headline and humbler, business-focused copy
-    await expect(page.locator("h1")).toContainText("Turn your team's manual tasks into seamless, automated workflows.");
-    await expect(page.locator("text=Hi, I'm Stefan. I translate complex technical problems into simple, reliable software solutions for growing businesses.")).toBeVisible();
+    await expect(page.locator("h1")).toContainText("Turn manual tasks into seamless, automated workflows.");
+    await expect(page.locator("text=Hi, I'm Stefan.")).toBeVisible();
+    await expect(page.locator("text=I translate complex technical problems into simple, reliable software solutions for growing businesses.")).toBeVisible();
 
     // 3. Verify that the three projects are present in the list
     await expect(page.locator("text=TechVector").first()).toBeVisible();

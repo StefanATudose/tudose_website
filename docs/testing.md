@@ -87,8 +87,9 @@ test.describe("Portfolio Navigation & Static Makeover", () => {
     await page.goto("/");
 
     // 2. Verify homepage headline and humbler, business-focused copy
-    await expect(page.locator("h1")).toContainText("Let's build technology that actually solves your business problems.");
-    await expect(page.locator("text=Hi, I'm Stefan. I'm a software engineer and former startup founder.")).toBeVisible();
+    await expect(page.locator("h1")).toContainText("Turn manual tasks into seamless, automated workflows.");
+    await expect(page.locator("text=Hi, I'm Stefan.")).toBeVisible();
+    await expect(page.locator("text=I translate complex technical problems into simple, reliable software solutions for growing businesses.")).toBeVisible();
 
     // 3. Verify that the three projects are present in the list
     await expect(page.locator("text=TechVector").first()).toBeVisible();
@@ -96,7 +97,7 @@ test.describe("Portfolio Navigation & Static Makeover", () => {
     await expect(page.locator("text=Kaizen").first()).toBeVisible();
 
     // 4. Verify that Kaizen startup story has its own repurposed section
-    await expect(page.locator("text=Kaizen: What my first startup taught me about your business")).toBeVisible();
+    await expect(page.locator("text=Thinking like a founder: Why you need a partner, not just a contractor")).toBeVisible();
 
     // 5. Navigate to the Florin Gold Gym page by clicking the project card
     const florinGymLink = page.locator("a[href='/florin-gold-gym']");
@@ -108,6 +109,8 @@ test.describe("Portfolio Navigation & Static Makeover", () => {
 
     // 7. Verify Florin Gold Gym case study title & content
     await expect(page.locator("h1")).toContainText("Florin Gold Gym: Building a System an Entire Business Bets Its Life On.");
+    await expect(page.locator("text=The Stakes: Real-World Dependency")).toBeVisible();
+    await expect(page.locator("text=Client Testimonial Video")).toBeVisible();
 
     // 8. Test back button links back to the main portfolio page
     const backBtn = page.locator("text=Back to Portfolio");

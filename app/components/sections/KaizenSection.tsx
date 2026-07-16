@@ -76,7 +76,7 @@ export function KaizenSection() {
               {/* Screen viewport */}
               <div className="w-full flex-grow rounded-b-xl overflow-hidden relative">
                 <Image
-                  src="/images/kaizen-0.png"
+                  src="/images/kaizen-1.png"
                   alt="Kaizen desktop landing page hero"
                   fill
                   className="object-cover object-top"
