@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="bg-[#0a1628] py-20 relative overflow-hidden">
+    <footer id="contact" className="bg-[#0a1628] py-20 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl"></div>

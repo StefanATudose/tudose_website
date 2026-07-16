@@ -1,8 +1,9 @@
-import { HeroSection, ServicesSection, TechVectorSection, GymSection, KaizenSection, Footer } from "@/app/components/sections";
+import { HeroSection, ServicesSection, TechVectorSection, GymSection, KaizenSection, Footer, Navbar } from "@/app/components/sections";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
+      <Navbar />
       <HeroSection />
 
       <ServicesSection />

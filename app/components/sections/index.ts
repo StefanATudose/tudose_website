@@ -5,3 +5,4 @@ export { KaizenSection } from "./KaizenSection";
 export { PhoneMockup } from "./PhoneMockup";
 export { Footer } from "./Footer";
 export { ServicesSection } from "./ServicesSection";
+export { Navbar } from "../navigation/Navbar";

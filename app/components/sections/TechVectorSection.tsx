@@ -39,7 +39,7 @@ export function TechVectorSection() {
   };
 
   return (
-    <section id="projects" className="py-24 bg-white border-b border-gray-100">
+    <section id="techvector" className="py-24 bg-white border-b border-gray-100">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           {/* Copy Side */}

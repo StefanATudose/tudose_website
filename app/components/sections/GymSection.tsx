@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function GymSection() {
   return (
-    <section className="py-24 bg-[#121318] text-white relative overflow-hidden">
+    <section id="gym" className="py-24 bg-[#121318] text-white relative overflow-hidden">
       {/* Background radial accent */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#db5f32]/5 rounded-full blur-3xl pointer-events-none"></div>
 
