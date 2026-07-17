@@ -13,15 +13,16 @@ export function HeroSection() {
         <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-400/5 rounded-full blur-2xl animate-float" style={{ animationDelay: "2s" }}></div>
       </div>
 
-      {/* Hero Image (Absolute, huge, starts at the absolute bottom of the page, going to the top) */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[90%] md:w-[70%] lg:w-full lg:max-w-[750px] xl:max-w-[900px] h-[55vh] sm:h-[65vh] lg:h-[90vh] xl:h-[95vh] z-0 opacity-30 lg:opacity-100 pointer-events-none flex items-end justify-center">
-        <div className="relative w-full h-full">
+        <div className="relative w-full h-full flex items-end justify-center">
+          {/* Ambient Glow behind the avatar */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-purple-500/20 rounded-full blur-3xl z-0 pointer-events-none"></div>
+
           <Image
             src="/tudose2.png"
             alt="Stefan Tudose"
             fill
             sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 750px, 900px"
-            className="w-full h-full object-contain object-bottom"
             priority
           />
         </div>
