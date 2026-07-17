@@ -16,7 +16,7 @@ test.describe("Portfolio Navigation & Static Makeover", () => {
     await expect(page.locator("text=Kaizen").first()).toBeVisible();
 
     // 4. Verify that Kaizen startup story has its own repurposed section
-    await expect(page.locator("text=Thinking like a founder: Why you need a partner, not just a contractor")).toBeVisible();
+    await expect(page.locator("text=Why you need a consultant with real business experience.")).toBeVisible();
 
     // 5. Navigate to the Florin Gold Gym page by clicking the project card
     const florinGymLink = page.locator("a[href='/florin-gold-gym']");

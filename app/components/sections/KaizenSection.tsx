@@ -15,36 +15,39 @@ export function KaizenSection() {
           {/* Content Side */}
           <div className="lg:col-span-6 space-y-8 text-left">
             <h2 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
-              Thinking like a founder: Why you need a partner, not just a contractor
+              Why you need a consultant with real business experience.
             </h2>
 
             <div className="space-y-6 text-white/90 font-medium leading-relaxed text-lg md:text-xl">
               <p>
-                Most developers are hired to write code, but great software starts with understanding why the code needs to exist in the first place.
+                Building my own startup taught me a <strong>lesson I wish I&apos;d learned sooner</strong>.
               </p>
               <p>
-                When I built <strong>Kaizen</strong>, a distraction blocker that reached thousands of users, I did not just write the Android code and database queries.
+                We built a polished product <strong>before proving anyone actually wanted it</strong>.
               </p>
               <p>
-                I had to handle product strategy, customer acquisition, marketing, and user feedback.
+                Our marketing reached tens of thousands of people.
               </p>
               <p>
-                That experience completely changed how I view software engineering.
+                <strong>Almost nobody downloaded the app.</strong>
               </p>
               <p>
-                I stopped looking at projects as a list of technical tasks and started looking at them as business investments.
+                That&apos;s when I realized <strong>great software can&apos;t fix the wrong idea</strong>.
               </p>
               <p>
-                When we work together, I will not just blindly write code; I will partner with you to audit features, simplify scope, and save you money.
+                Since then, I&apos;ve approached every project differently.
               </p>
               <p>
-                I understand the pressure of keeping a business profitable, managing operational costs, and hitting milestones.
+                I challenge assumptions, question features, and focus on what creates <strong>real business value</strong> before writing more code.
               </p>
               <p>
-                You do not need another contractor who just completes tickets and asks for approval.
+                Because every unnecessary feature <strong>costs time, money, and momentum</strong>.
               </p>
               <p>
-                You need a technical partner who cares about your business outcome as much as you do.
+                I don&apos;t just build what you ask for.
+              </p>
+              <p>
+                I help you build <strong>what your business actually needs</strong>.
               </p>
             </div>
 
@@ -55,7 +58,7 @@ export function KaizenSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl text-center"
               >
-                <span>Visit the Kaizen site</span>
+                <span>Visit my startup</span>
                 <i className="fas fa-arrow-right text-sm"></i>
               </a>
             </div>
@@ -86,7 +89,7 @@ export function KaizenSection() {
               </div>
             </div>
             {/* Description underneath */}
-            <p className="text-white/50 text-xs text-center mt-6 max-w-sm leading-relaxed">
+            <p className="text-white text-xs text-center mt-6 max-w-sm leading-relaxed">
               The homepage of Kaizen, a project built with startup principles, unit economics, and real-world distribution in mind.
             </p>
           </div>

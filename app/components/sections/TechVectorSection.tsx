@@ -45,33 +45,30 @@ export function TechVectorSection() {
           {/* Copy Side */}
           <div className="lg:col-span-6 space-y-8">
             <h2 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight leading-tight mb-8">
-              How I can help: AI integration in your business
+              How I can help: Bring AI into your business.
             </h2>
 
             <div className="space-y-6 text-gray-900 font-medium leading-relaxed text-lg md:text-xl">
               <p>
-                By {new Date().getFullYear()}, AI isn&apos;t fully replacing businesses, but <strong>it&apos;s becoming part of everyday business operations</strong>.
+                AI isn&apos;t about replacing people.
               </p>
               <p>
-                Companies are using AI to answer emails, summarize meetings, route requests, and automate repetitive tasks.
+                It&apos;s about <strong>removing repetitive work</strong>.
               </p>
               <p>
-                The biggest gains often come from <strong>connecting the tools you already use, not replacing them</strong>.
+                I build AI systems that <strong>automate workflows</strong>, connect your existing tools, and give your team <strong>answers in seconds</strong>.
               </p>
               <p>
-                Imagine <strong>invoices processed automatically, support tickets categorized instantly, or CRM records updated without manual work.</strong>
+                Think handling <strong>invoices, support tickets, CRM updates automatically</strong>.
               </p>
               <p>
-                For organizations with large knowledge bases, <strong>AI can also become an expert on your internal documentation</strong>.
+                Or even searching <strong>thousands of pages of internal documents</strong> with a simple question.
               </p>
               <p>
-                Imagine a private search engine that understands your contracts, policies, technical manuals, and PDFs, then answers questions in seconds.
+                <strong>Private. Secure. Built around your business.</strong>
               </p>
               <p>
-                That&apos;s the kind of secure, internal AI systems I build.
-              </p>
-              <p>
-                <strong>TechVector</strong> is a live example of this approach: a custom AI research assistant built from the ground up.
+                <strong>TechVector</strong> is a live example of what&apos;s possible.
               </p>
             </div>
 
@@ -82,7 +79,7 @@ export function TechVectorSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl text-center"
               >
-                <span>Try the live assistant yourself</span>
+                <span>Try the live assistant</span>
                 <i className="fas fa-arrow-right text-sm"></i>
               </a>
             </div>

@@ -27,44 +27,38 @@ export function GymSection() {
               <div className="absolute top-5 left-1/2 -translate-x-1/2 w-24 h-4 bg-black rounded-full z-20"></div>
             </div>
             {/* Description underneath */}
-            <p className="text-white/50 text-xs text-center mt-6 max-w-xs leading-relaxed">
-              The custom-built Flutter companion app used by gym members to check occupancy, book classes, and trigger entry turnstiles.
+            <p className="text-white text-xs text-center mt-6 max-w-xs leading-relaxed">
+              The custom-built mobile app used by gym members to purchase subscriptions, book classes, and trigger entry turnstiles.
             </p>
           </div>
 
           {/* Copy Side (Right on desktop) */}
           <div className="lg:col-span-7 lg:order-2 order-1 space-y-8">
             <h2 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
-              Why you can trust me: Software that runs a physical business
+              Why you can trust me: My software can&apos;t afford to fail.
             </h2>
 
             <div className="space-y-6 text-white/90 font-medium leading-relaxed text-lg md:text-xl">
               <p>
-                It is easy to make software look good in a presentation, but it is much harder to build systems that keep a physical business running.
+                Anyone can make a prototype with AI.
               </p>
               <p>
-                For <strong>Florin Gold Gym</strong>, I built the entire digital infrastructure: a Next.js admin portal and custom Flutter mobile apps.
+                I build <strong>reliable software</strong> that businesses depend on every day.
               </p>
               <p>
-                This system runs a physical facility of <strong>500+ active monthly members.</strong>
+                For <strong>Florin Gold Gym</strong>, I built the entire digital platform: the admin portal, mobile apps, payments, bookings, and access control.
               </p>
               <p>
-                Because bookings, payments, and automated turnstiles are tied directly to database state, <strong>this software is the heart of the business</strong>.
+                <strong>500+ members</strong> rely on it every month.
               </p>
               <p>
-                If the server goes down, operations freeze and members are locked outside.
+                If it goes down, <strong>payments stop, operations stall</strong>, and members can&apos;t get inside.
               </p>
               <p>
-                To make sure that never happens, I built a <strong>zero-downtime architecture</strong> using idempotent webhooks and real-time state listeners.
+                So I built it for <strong>reliability from day one</strong>.
               </p>
               <p>
-                When you hire me, you are not just getting someone who writes code.
-              </p>
-              <p>
-                You are getting a partner who treats your business logic with the same weight as a physical front door.
-              </p>
-              <p>
-                That is the level of reliability I bring to every project I touch.
+                That&apos;s the <strong>standard I bring to every project</strong>.
               </p>
             </div>
 
@@ -73,7 +67,7 @@ export function GymSection() {
                 href="/florin-gold-gym"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl text-center"
               >
-                <span>Read the full case study</span>
+                <span>Read the case study</span>
                 <i className="fas fa-arrow-right text-sm"></i>
               </Link>
             </div>

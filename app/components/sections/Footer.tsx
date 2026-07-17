@@ -13,10 +13,10 @@ export function Footer() {
           <div className="text-center mb-12">
             {/* Name and title */}
             <h3 className="text-3xl font-bold text-white mb-2">A. Stefan Tudose</h3>
-            <p className="text-white/60 text-lg mb-6">AI Solutions Architect</p>
+            <p className="text-white/80 text-lg mb-6">AI Solutions Consultant</p>
 
             {/* Tagline */}
-            <p className="text-white/50 max-w-md mx-auto text-sm font-light">
+            <p className="text-white/60 max-w-md mx-auto text-sm font-light">
               Helping businesses build reliable software and make sense of technology. Let&apos;s chat.
             </p>
           </div>
